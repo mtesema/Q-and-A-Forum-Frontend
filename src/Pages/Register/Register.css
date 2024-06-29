@@ -1,0 +1,154 @@
+.register-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.register-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  height: auto;
+  /* Allow height to adjust based on content */
+  text-align: center;
+}
+
+.register-form h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.register-form h2 {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.register-form h2 a {
+  color: #f78407;
+  text-decoration: none;
+}
+
+.register-form h2 a:hover {
+  text-decoration: underline;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-bottom-color 0.3s, box-shadow 0.3s;
+  font-size: 16px;
+  color: #555;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-bottom: 2px solid #f78407;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Enhanced focus shadow */
+}
+
+.full-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.full-name .form-group {
+  width: 48%;
+}
+
+.register-section button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff8400;
+    transition: all 0.6s ease-in-out;
+    background-image: linear-gradient(320deg, #f84d0a, #ff7800);
+}
+
+.register-form p {
+  font-size: 10px;
+  text-align: left;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #6c757d;
+}
+
+.register-form p a {
+  color: #f78407;
+  text-decoration: none;
+}
+
+.register-form p a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .register-form {
+    width: 80%;
+    padding: 15px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .full-name {
+    flex-direction: column;
+  }
+
+  .full-name .form-group {
+    width: 100%;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .register-form {
+    width: 90%;
+    padding: 10px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .register-form h1 {
+    font-size: 20px;
+    /* Adjust font size for smaller screens */
+  }
+
+  .register-form h2 {
+    font-size: 14px;
+    /* Adjust font size for smaller screens */
+  }
+
+  .form-group input {
+    padding: 6px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .register-section button[type="submit"] {
+    padding: 8px;
+    /* Adjust padding for smaller screens */
+    font-size: 14px;
+    /* Adjust font size for smaller screens */
+  }
+
+  .register-form p {
+    font-size: 9px;
+    /* Adjust font size for smaller screens */
+  }
+}

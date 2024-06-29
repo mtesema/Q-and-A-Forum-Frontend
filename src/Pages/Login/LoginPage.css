@@ -1,0 +1,52 @@
+.login-main-page {  display: flex;
+  flex-direction: row; /* Adjusted to column for smaller screens */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin: 20 auto;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  background-color: hsl(0, 0%, 96%);
+  gap: 40px;
+  padding: 40px;
+
+}
+
+.login-container {
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+}
+
+@media screen and (max-width: 738px) {
+  .login-main-page {
+    padding-bottom: 30px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    align-items: center;
+
+
+      margin: auto;
+   
+      background-color: hsl(0, 0%, 96%);
+      gap: 40px;
+      padding: 40px;
+    padding-bottom: 200px;
+
+    
+  }
+
+
+}

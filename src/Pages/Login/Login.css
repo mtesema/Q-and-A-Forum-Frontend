@@ -1,0 +1,143 @@
+.login-section {
+  display: flex;
+}
+
+.login-form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  width: 1000px;
+  text-align: center;
+}
+
+.login-header {
+  margin-bottom: 80px;
+}
+
+.login-title {
+  margin-bottom: 8px;
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.login-subtitle {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.login-subtitle a {
+  color: #f78407;
+  text-decoration: none;
+}
+
+.login-form-group {
+  margin-bottom: 20px;
+}
+
+.login-form-group input {
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 20px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.input-blue {
+  background-color: #e7f3ff; /* Light blue background */
+}
+
+.input-red {
+  background-color: #ffe7e7; /* Light red background */
+}
+
+.login-form-group input::placeholder {
+  color: #999;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.login-form-group input:focus {
+  outline: none;
+  border-bottom: 3px solid #f78407;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+  transition: all 0.4s ease-in-out;
+}
+
+
+.error-message {
+  color: rgb(134, 4, 4);
+  padding: 15px;
+  margin: 5px 10px 20px 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: rgba(255, 0, 0, 0.2);
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.error-message:hover {
+  background-color: rgba(255, 0, 0, 0.3);
+  border-color: rgba(255, 0, 0, 0.7);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.forgot-password a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f78407;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.login-section button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.login-section button:hover {
+    background-color: #ff8400;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+      background-image: linear-gradient(90deg, #fd4902, #ff7800);
+}
+
+@media screenand and (max-width: 738px) {
+
+  .login-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  
+}
